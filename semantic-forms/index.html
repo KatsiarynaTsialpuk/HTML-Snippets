@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Semantic Forms</title>
+	</head>
+	<body>
+		<!--
+			OPTIONS
+			- action the url of a web page that processes the infomation submitted via the form.
+			- autocomplete - on means that this for can have autocomplete fields. Default is set to on.
+			- method - post/get most of the time its post
+			- name - must be named unique among other forms in the document
+			- novalidate - default is false. This just means the form is not to be validated after submission
+		-->
+
+		<form role="form" name="form1" novalidate="true" action="" method="post">
+
+		</form>
+
+		<!--
+			Fieldsets - Use this as a wrapper around your form elements. If your form has different groups of informaiton then use multiple fieldsets
+			Legend - It is semantic to have a legen with a fieldset so that the group has a title for each section it is going into.
+		-->
+
+		<form role="form" name="form2" novalidate="true" action="" method="post">
+			<fieldset>
+				<legend>
+					Personal Details
+				</legend>
+			</fieldset>
+			<fieldset>
+				<legend>
+					Address Details
+				</legend>
+			</fieldset>
+		</form>
+	</body>
+</html>
