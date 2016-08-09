@@ -11,6 +11,15 @@
 			- method - post/get most of the time its post
 			- name - must be named unique among other forms in the document
 			- novalidate - default is false. This just means the form is not to be validated after submission
+
+			Common Attributes you can use on inputs
+			- Pattern - Use regex to define a pattern (EG: 00-00-00) This is useful if you want just numbers to appear on mobile keyboard (pattern="[0-9]*")
+			- Name - gives an input a name which can be used as a reference
+			- Id - You need to give your input an ID so your label can belong to that input.
+			- Auto Focus - default is set to false
+			- Value - Set a value for the element
+			- Placeholder - Some placeholder text for your input field
+			- Disabled - Prevents the user from selecting this input
 		-->
 
 		<form role="form" name="form1" novalidate="true" action="" method="post">
@@ -32,6 +41,26 @@
 				<legend>
 					Address Details
 				</legend>
+			</fieldset>
+		</form>
+
+		<!--
+			Labels - Make sure that every input has a label assigned to it.
+			Attr[for="input-ID"]
+		-->
+
+		<form role="form" name="form3" novalidate="true" action="" method="post">
+			<fieldset>
+				<legend>
+					Personal Details
+				</legend>
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" name="username" id="username" />
+				</div>
+				<div class="form-footer">
+					<button type="submit">Submit</button>
+				</div>
 			</fieldset>
 		</form>
 	</body>
