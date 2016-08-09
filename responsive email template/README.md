@@ -76,11 +76,13 @@ To handle media query style bugs in the Yahoo email client, add the attribute `y
 <body yahoo>
 ```
 
-Then to style fixes for that client you would then:
+Then to add style fixes for that email client you would:
 
 ```
 /* CSS */
-body[yahoo] .class-name {}
+<style type="text/css">
+   body[yahoo] .class-name {}
+</style>
 ```
 
 ## Apple Mail
