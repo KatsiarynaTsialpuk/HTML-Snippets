@@ -66,7 +66,7 @@ If you need support for outlook, add the following around the code:
 </table>
 <![endif]-->
 ```
-This will wrap it in a 600px container. Some versions of Outlook use the IE rendering engine
+This will wrap the main container in a 600px table. Some versions of Outlook use the IE rendering engine
 to output the email whereas other versions of Outlook use Microsoft word rendering engine.
 
 ## Hiding mobile styles for Yahoo mail
