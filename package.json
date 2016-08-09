@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/code-computerlove/HTML-Snippets#readme",
   "devDependencies": {
-    "a11y": "^0.4.1"
+    "a11y": "^0.4.1",
+    "chalk": "^1.1.3"
+  },
+  "dependencies": {
+    "node-emoji": "^1.3.1"
   }
 }
