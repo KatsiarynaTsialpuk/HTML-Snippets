@@ -70,7 +70,7 @@ This will wrap the main container in a 600px table. Some versions of Outlook use
 to output the email whereas other versions of Outlook use Microsoft word rendering engine.
 
 ## Hiding mobile styles for Yahoo mail
-To handle media query style bugs in the Yahoo email client, adding the attribute `yahoo` to the body so then you can write styles as an overide:
+To handle media query style bugs in the Yahoo email client, add the attribute `yahoo` to the body:
 
 ```
 <body yahoo>
