@@ -1,4 +1,6 @@
 # HTML-Snippets
+[![Build Status](https://img.shields.io/travis/code-computerlove/HTML-Snippets.svg?branch=master&style=flat-square)](https://travis-ci.org/code-computerlove/HTML-Snippets)
+
 A useful handbook that contains HTML snippets which are semantic and accessible.
 
 ## Setup
