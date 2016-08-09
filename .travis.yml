@@ -5,7 +5,6 @@ env:
 cache:
   directories:
     - node_modules
-    - test/mock-project/node_modules
 notifications:
     email: false
 node_js:

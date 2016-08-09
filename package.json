@@ -4,7 +4,7 @@
   "description": "This is a repo of compoents that can be reused.",
   "main": "index.js",
   "scripts": {
-    "test": "a11y **/*.html"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
