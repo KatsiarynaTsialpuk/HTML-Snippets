@@ -1,5 +1,5 @@
 # Semantic Forms
-A guideline for creating semantic Forms.
+> A guideline for creating semantic Forms.
 
 ## Form Attributes
 - `action` - the url of a web page that processes the information submitted via the form.

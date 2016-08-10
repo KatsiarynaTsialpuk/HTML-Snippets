@@ -16,3 +16,4 @@ To test any components you have added to the repo run `npm test`
 - [Semantic Forms](https://github.com/code-computerlove/HTML-Snippets/tree/master/semantic-forms)
 - [Meta Data](https://github.com/code-computerlove/HTML-Snippets/tree/master/meta-data)
 - [Picture](https://github.com/code-computerlove/HTML-Snippets/tree/master/picture)
+- [Quotes](https://github.com/code-computerlove/HTML-Snippets/tree/master/quotes)
