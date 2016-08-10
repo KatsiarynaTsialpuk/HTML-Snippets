@@ -6,6 +6,7 @@ var emoji = require('node-emoji');
 
 var pages = [
     './meta-data/index.html',
+    './picture/index.html',
     './semantic-forms/index.html'
 ];
 
@@ -20,9 +21,9 @@ module.exports = function() {
 
             reports.audit.forEach(function (el) {
                 if (el.result === 'FAIL') {
-                    console.log(emoji.get(':cry:') + chalk.red( ' ' + el.heading));
+                    console.log(emoji.get(':cry: ') + chalk.red( ' ' + el.heading));
                 } else {
-                    console.log(emoji.get(':smile:') + chalk.green(' ' + el.heading));
+                    console.log(emoji.get(':smile: ') + chalk.green(' ' + el.heading));
                 }
             });
 
