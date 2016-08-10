@@ -1,7 +1,7 @@
 # Responsive Email Template
 Here is a baseline template for a HTML Email.
 
-```
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -44,7 +44,7 @@ Here is a baseline template for a HTML Email.
 
 If you need support for outlook, add the following around the code:
 
-```
+```html
 <!--
     Support for Outlook and Locus
 -->
@@ -72,13 +72,13 @@ to output the email whereas other versions of Outlook use Microsoft word renderi
 ## Hiding mobile styles for Yahoo mail
 To handle media query style bugs in the Yahoo email client, add the attribute `yahoo` to the body:
 
-```
+```html
 <body yahoo>
 ```
 
 Then to add style fixes for that email client you would:
 
-```
+```css
 /* CSS */
 <style type="text/css">
    body[yahoo] .class-name {}
@@ -90,7 +90,7 @@ Then to add style fixes for that email client you would:
 Apple mail does not support the max-width property, however it does support media queries so if you add the following code it will make your email responsive
 in an apple mail client.
 
-```
+```css
 <style type="text/css">
    /*
        Fix for Apple Mail
