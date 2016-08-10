@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Picture element</title>
+</head>
+<body>
+
+  <figure>
+    <picture>
+      <source media="(max-width: 50em)" srcset="images/placeholder_800x450.webp" type="image/webp">
+      <!-- serving `webp` images to browsers that support the format
+           see http://caniuse.com/#feat=webp for latest browser support -->
+      <source media="(max-width: 50em)" srcset="images/placeholder_800x450.png">
+      <!-- fallback to `.png` format - larger filesize but widely supported -->
+      <source media="(min-width: 50em)" srcset="images/placeholder_1600x900.webp" type="image/webp">
+      <source media="(min-width: 50em)" srcset="images/placeholder_1600x900.png">
+      <!-- fallback to largest image for non-`<picture>` element supporters
+           note: use JS fallback for IE 8 if you want responsive images
+           see https://scottjehl.github.io/picturefill - performance hit as it’s client-side JS, but add if needed -->
+      <img src="images/placeholder_1600x900.png" alt="">
+      <!-- No `alt` in this instance as the `<figcaption>` describes the image -->
+    </picture>
+    <figcaption>A placeholder screenshot</figcaption>
+    <!-- `<figcaption>` inside `<figure>` -->
+  </figure>
+
+  <picture>
+      <source media="(min-width: 50em)" srcset="images/placeholder_1600x900.png 1x, images/placeholder_1600x900@2x.png 2x" />
+      <!-- specifying 1x and 2x images for device pixel ratio -->
+      <source srcset="images/placeholder_800x450.png 1x, images/placeholder_800x450@2x.png 2x" />
+      <!-- fallback to largest image for non-`<picture>` element supporters -->
+      <img src="images/placeholder_1600x900.png" alt="A placeholder image" />
+  </picture>
+
+</body>
+</html>
