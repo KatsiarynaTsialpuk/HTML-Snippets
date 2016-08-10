@@ -3,7 +3,7 @@ Here is a list of all the meta tags that the search team need on any website.
 
 ## Tags that must be on the page
 
-```
+```html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@ Here is a list of all the meta tags that the search team need on any website.
 
 ## Standard Meta Data
 
-```
+```html
 <title>Page Title</title>
 <meta name="description" content="Page Description">
 
@@ -21,7 +21,7 @@ Here is a list of all the meta tags that the search team need on any website.
 
 ## Favicon Meta
 
-```
+```html
 <link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">
@@ -31,7 +31,7 @@ Here is a list of all the meta tags that the search team need on any website.
 
 ## Facebook sharing meta tags
 
-```
+```html
 <meta property="fb:app_id" content="123456789">
 <meta property="og:url" content="https://example.com/page.html">
 <meta property="og:type" content="website">
@@ -45,7 +45,7 @@ Here is a list of all the meta tags that the search team need on any website.
 
 ## Twitter sharing meta tags
 
-```
+```html
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
@@ -57,7 +57,7 @@ Here is a list of all the meta tags that the search team need on any website.
 
 ## Google Plus meta tags
 
-```
+```html
 <link href="https://plus.google.com/+YourPage" rel="publisher">
 <meta itemprop="name" content="Content Title">
 <meta itemprop="description" content="Content description less than 200 characters">
