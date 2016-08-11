@@ -8,7 +8,7 @@
 
 Using a `<q>` element as an inline quote.
 
-```
+```html
 <p>
   <q>This is some dummy text</q> - said John Doe
 </p>
@@ -18,7 +18,7 @@ Using a `<q>` element as an inline quote.
 
 Using a `<blockquote>` with a `<footer>` to improve the semantics.
 
-```
+```html
 <blockquote>
   <p>
     This is some dummy text
