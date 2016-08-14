@@ -31,3 +31,6 @@ To make your aticle more semantic you can use:
 
 </article>
 ```
+
+## Useful resources
+- [MDN - Articles](https://developer.mozilla.org/en/docs/Web/HTML/Element/article)
