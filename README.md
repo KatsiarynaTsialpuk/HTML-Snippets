@@ -17,3 +17,4 @@ To test any components you have added to the repo run `npm test`
 - [Meta Data](https://github.com/code-computerlove/HTML-Snippets/tree/master/meta-data)
 - [Picture](https://github.com/code-computerlove/HTML-Snippets/tree/master/picture)
 - [Quotes](https://github.com/code-computerlove/HTML-Snippets/tree/master/quotes)
+- [Tables](https://github.com/code-computerlove/HTML-Snippets/tree/master/tables)
