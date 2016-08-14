@@ -10,6 +10,7 @@ To make your aticle more semantic you can use:
 - `<footer>` - splits out content that shouldnt be in the main section of content. So for example the author of the blog post.
 - `<address>` - Author, email address etc. 
 - `<time>` - useful for adding the time of when the blog was posted on.
+- `rel="author"` - defines th elink reference to be related to the author. 
 
 ```html
 <article>
