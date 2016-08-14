@@ -25,7 +25,7 @@ To make your aticle more semantic you can use:
 		<!-- If it is a blog post you can use the address tag to specify the author -->
 
 		<address>
-		    You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>. 
+		    You can contact author at <a href="http://www.somedomain.com/contact" rel="author">www.somedomain.com</a>. 
 	 	</address>
 	</footer>
 
