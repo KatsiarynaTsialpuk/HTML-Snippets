@@ -8,6 +8,7 @@ var pages = [
     './meta-data/index.html',
     './picture/index.html',
     './quotes/index.html',
+    './article/index.html',
     './tables/index.html',
     './semantic-forms/index.html'
 ];
@@ -33,6 +34,4 @@ module.exports = function() {
 
         });
     });
-
-
 }();
