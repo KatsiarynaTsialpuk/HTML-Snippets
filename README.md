@@ -18,3 +18,4 @@ To test any components you have added to the repo run `npm test`
 - [Picture](https://github.com/code-computerlove/HTML-Snippets/tree/master/picture)
 - [Quotes](https://github.com/code-computerlove/HTML-Snippets/tree/master/quotes)
 - [Tables](https://github.com/code-computerlove/HTML-Snippets/tree/master/tables)
+- [Articles](https://github.com/code-computerlove/HTML-Snippets/tree/master/article)
