@@ -9,6 +9,7 @@ var pages = [
     './picture/index.html',
     './quotes/index.html',
     './article/index.html',
+    './tables/index.html',
     './semantic-forms/index.html'
 ];
 
