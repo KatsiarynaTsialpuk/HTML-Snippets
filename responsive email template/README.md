@@ -23,10 +23,10 @@
         </style>
     </head>
     <body bgcolor="#fff">
-        <table width="100%" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0">
+        <table width="100%" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" role="presentation">
             <tr>
                 <td>
-                    <table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+                    <table class="content" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
                         <tr>
                             <td>
                                 Hello!
@@ -49,11 +49,11 @@ If you need support for outlook, add the following around the code:
     Support for Outlook and Locus
 -->
 <!--[if (gte mso 9)|(IE)]>
-<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
     <tr>
         <td>
 <![endif]-->
-<table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+<table class="content" align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
     <tr>
         <td>
             Hello!
