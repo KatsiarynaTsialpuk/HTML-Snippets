@@ -10,7 +10,8 @@ var pages = [
     './quotes/index.html',
     './article/index.html',
     './tables/index.html',
-    './semantic-forms/index.html'
+    './semantic-forms/index.html',
+    './accordion/index.html'
 ];
 
 module.exports = function() {

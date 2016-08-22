@@ -1,0 +1,11 @@
+.accordion__section[aria-hidden="true"] {
+	display: none;
+}
+
+.no-js .accordion__section[aria-hidden="true"] {
+	display: block;
+}
+
+.accordion__section[aria-hidden="false"] {
+	display: block;
+}
