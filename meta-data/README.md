@@ -27,6 +27,7 @@ Here is a list of all the meta tags that the search team need on any website.
 <link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">
 <link rel="icon" href="path/to/favicon-62.png" sizes="62x62" type="image/png">
 <link rel="icon" href="path/to/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
 ```
 
 ## Facebook sharing meta tags
@@ -39,7 +40,7 @@ Here is a list of all the meta tags that the search team need on any website.
 <meta property="og:image" content="https://example.com/image.jpg">
 <meta property="og:description" content="Description Here">
 <meta property="og:site_name" content="Site Name">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="en_GB">
 <meta property="article:author" content="">
 ```
 
