@@ -44,8 +44,12 @@
 	  <source srcset="images/placeholder_1600x900.png 1x, images/placeholder_1600x900@2x.png 2x" media="(min-width: 1000px)">
 	  <source srcset="images/placeholder_800x450.png 1x, images/placeholder_800x450@2x.png 2x">
 	  <!--[if IE 9]></video><![endif]-->
-		<!-- 	Remove the src/srcset to prevent wrong image flash on Safari. This feature breaks in Andriod 2.3 -->
+		<!-- 	Remove the src/srcset to prevent wrong image flash on Safari. This feature breaks in Android 2.3 -->
 	  <img alt="…">
+
+		<noscript>
+			<img src="images/placeholder_1600x900.png" alt="">
+		</noscript>
 	</picture>
 
 	<script>
