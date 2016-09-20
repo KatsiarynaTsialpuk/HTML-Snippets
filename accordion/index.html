@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accordion Element</title>
+	<link rel="stylesheet" href="./styles.css"></link>
+</head>
+<body>
+	<main>
+		<h1>My Accordion Component</h1>
+
+		<ul class="accordion" role="tablist" data-accordion>
+			<li class="accordion__item">
+				<h2 class="accordion__heading">
+					<a class="accordion__link" href="#accordion-tab-1" role="tab" data-accordion-links="1">Accordion 1</a>
+				</h2>
+				<div class="accordion__section" id="accordion-tab-1" role="tabpanel" data-accordion-tab="1" aria-hidden="false">
+					<p>
+						Accordion Content
+					</p>
+				</div>
+			</li>
+			<li class="accordion__item">
+				<h2 class="accordion__heading">
+					<a class="accordion__link" href="#accordion-tab-2" role="tab" data-accordion-links="2">Accordion 2</a>
+				</h2>
+				<div class="accordion__section" id="accordion-tab-2" role="tabpanel" data-accordion-tab="2">
+					<p>
+						Accordion Content
+					</p>
+				</div>
+			</li>
+		</ul>
+	</main>
+	<script src="./main.js"></script>
+</body>
+</html>
