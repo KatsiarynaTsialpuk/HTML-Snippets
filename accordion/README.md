@@ -40,5 +40,5 @@ For the JavaScript to work you need to link the `data-accordion-links` with `dat
 
 ## Useful Resources
 
-- (Aria Tab Panel Tutorial)[http://accessibility.athena-ict.com/aria/examples/tabpanel2.shtml]
-- (Using Aria)[https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques]
+- [Aria Tab Panel Tutorial](http://accessibility.athena-ict.com/aria/examples/tabpanel2.shtml)
+- [Using Aria](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques)
