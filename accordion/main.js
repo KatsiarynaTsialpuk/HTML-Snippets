@@ -8,8 +8,9 @@
 	function Accordion(accordionEl, options) {
 
 
-		var ARIA_HIDDEN 	= 'aria-hidden';
-		var ARIA_SELECTED = 'aria-selected';
+		var ARIA_HIDDEN 		= 'aria-hidden';
+		var ARIA_EXPANDED 	= 'aria-expanded';
+		var ARIA_SELECTED 	= 'aria-selected';
 
 		var EL_LINKS 			= 'data-accordion-links';
 		var EL_TAB 				= 'data-accordion-tab';
@@ -36,6 +37,7 @@
 		function reset() {
 			for(var i = 0; i < tabLinks.length; i++) {
 					setAttribute(tabLinks[i], ARIA_SELECTED, '');
+					setAttribute(tabLinks[i], ARIA_EXPANDED, false);
 					removeSelectedLinkState(tabLinks[i], ARIA_SELECTED);
 					setAttribute(tabs[i], ARIA_HIDDEN, true);
 			}
@@ -59,6 +61,8 @@
 			if(isTabHidden === "true") {
 
 				setAttribute(selectedEl, ARIA_SELECTED, true);
+				
+				setAttribute(selectedEl, ARIA_EXPANDED, true);
 
 				setAttribute(selectedTab, ARIA_HIDDEN, false);
 
@@ -67,6 +71,8 @@
 				setAttribute(selectedEl, ARIA_SELECTED, '');
 
 				removeSelectedLinkState(selectedEl, ARIA_SELECTED);
+
+				setAttribute(selectedEl, ARIA_EXPANDED, false);
 
 				setAttribute(selectedTab, ARIA_HIDDEN, true);
 
@@ -95,6 +101,7 @@
 
 			// Sets the first item to be open
 			setAttribute(tabs[0], ARIA_HIDDEN, false);
+			setAttribute(tabLinks[0], ARIA_EXPANDED, true);
 		}
 
 		init();
