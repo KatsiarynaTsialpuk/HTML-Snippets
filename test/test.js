@@ -11,7 +11,9 @@ var pages = [
     './article/index.html',
     './tables/index.html',
     './semantic-forms/index.html',
-    './accordion/index.html'
+		'./accordion/index.html',
+		'./navigation/index.html',
+    './bank-details/index.html'
 ];
 
 module.exports = function() {
