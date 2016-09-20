@@ -20,3 +20,4 @@ To test any components you have added to the repo run `npm test`
 - [Articles](https://github.com/code-computerlove/HTML-Snippets/tree/master/article)
 - [Tables](https://github.com/code-computerlove/HTML-Snippets/tree/master/tables)
 - [Accordion](https://github.com/code-computerlove/HTML-Snippets/tree/master/accordion)
+- [Navigation](https://github.com/code-computerlove/HTML-Snippets/tree/master/navigation)
