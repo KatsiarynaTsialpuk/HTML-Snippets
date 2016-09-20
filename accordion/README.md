@@ -17,9 +17,9 @@ Secondly add a `li` item with the following markup below.
 ```html
 <li class="accordion__item">
 	<h2 class="accordion__heading">
-		<a class="accordion__link" href="#accordion-tab-2" role="tab" data-accordion-links="2">Accordion 2</a>
+		<a class="accordion__link" href="#accordion-tab-1" role="tab" data-accordion-links="1" aria-controls="accordion-tab-1">Accordion 1</a>
 	</h2>
-	<div class="accordion__section" id="accordion-tab-2" role="tabpanel" data-accordion-tab="2">
+	<div class="accordion__section" id="accordion-tab-1" role="tabpanel" data-accordion-tab="1">
 		<p>
 			Accordion Content
 		</p>
@@ -28,7 +28,7 @@ Secondly add a `li` item with the following markup below.
 ```
 
 Links inside a heading attribute will improve accessibility and assist the user when they tab through the page. The javascript will add aria-hidden to all of
-the items on the page and then it will set the first item to `aria-hidden="false"`. 
+the items on the page and then it will set the first item to `aria-hidden="false"`.
 
 For the JavaScript to work you need to link the `data-accordion-links` with `data-accordion-tab`. So for example:
 
