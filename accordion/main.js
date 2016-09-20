@@ -5,7 +5,7 @@
 
 	var dataAccordion = document.querySelectorAll('[data-accordion]');
 
-	function Accordion(accordionEl) {
+	function Accordion(accordionEl, options) {
 
 
 		var ARIA_HIDDEN 	= 'aria-hidden';
@@ -14,36 +14,73 @@
 		var EL_LINKS 			= 'data-accordion-links';
 		var EL_TAB 				= 'data-accordion-tab';
 
-		var tabLinks = accordionEl.querySelectorAll('[' + EL_LINKS + ']');
+		var tabLinks 			= accordionEl.querySelectorAll('[' + EL_LINKS + ']');
+		var tabs 					= accordionEl.querySelectorAll('[' + EL_TAB + ']');
 
-		function changeLinkState(link, condition) {
-			link.setAttribute(ARIA_SELECTED, condition);
+		var selectedTab;
+		var selectedEl;
+		var tabId;
+
+		function removeSelectedLinkState(el, attr) {
+			el.removeAttribute(attr);
 		}
 
-		function changeTabState(tab, condition) {
-			tab.setAttribute(ARIA_HIDDEN, condition);
+		function setAttribute(el, attr, state) {
+			el.setAttribute(attr, state);
 		}
+
+		function getAttribute(el, attr) {
+			return el.getAttribute(attr);
+		}
+
+		function reset() {
+			for(var i = 0; i < tabLinks.length; i++) {
+					setAttribute(tabLinks[i], ARIA_SELECTED, '');
+					removeSelectedLinkState(tabLinks[i], ARIA_SELECTED);
+					setAttribute(tabs[i], ARIA_HIDDEN, true);
+			}
+		}
+
+		function closeTabs() {
+			// Close other items if the parameter closeOtherTabs is set to true.
+			if(options.closeOtherTabs) {
+				reset();
+			}
+		}
+
+		function toggleState() {
+
+			selectedTab = accordionEl.querySelectorAll('[' + EL_TAB + '="' + tabId + '"]')[0];
+
+			var isTabHidden = selectedTab.getAttribute(ARIA_HIDDEN); // returns string
+
+			closeTabs();
+
+			if(isTabHidden === "true") {
+
+				setAttribute(selectedEl, ARIA_SELECTED, true);
+
+				setAttribute(selectedTab, ARIA_HIDDEN, false);
+
+			} else {
+
+				setAttribute(selectedEl, ARIA_SELECTED, '');
+
+				removeSelectedLinkState(selectedEl, ARIA_SELECTED);
+
+				setAttribute(selectedTab, ARIA_HIDDEN, true);
+
+			}
+
+		}
+
 
 		function handleState(event) {
 			event.preventDefault();
 
-			var selectedEl 	= event.target;
-			var tabId 			= selectedEl.getAttribute(EL_LINKS);
-			var selectedTab = accordionEl.querySelectorAll('[' + EL_TAB + '="' + tabId + '"]')[0];
-
-
-			// If it is already open then close it
-			if(selectedEl.getAttribute(ARIA_SELECTED) === "true") {
-				changeLinkState(selectedEl, false);
-				changeTabState(selectedTab, true);
-
-				return;
-			}
-
-			changeLinkState(selectedEl, true);
-			changeTabState(selectedTab, false);
-
-			return;
+			selectedEl 	= event.target;
+			tabId 			= getAttribute(selectedEl, EL_LINKS);
+			toggleState();
 		}
 
 		function bindEvents(element) {
@@ -53,11 +90,29 @@
 
 		function init() {
 			tabLinks.forEach(bindEvents);
+
+			reset();
+
+			// Sets the first item to be open
+			setAttribute(tabs[0], ARIA_HIDDEN, false);
 		}
 
 		init();
 
 	}
+
+	// this checks if the element exists on the page before running the code.
+
+	var options = {
+		closeOtherTabs: true
+	};
+
+	if(dataAccordion.length > 0) {
+		dataAccordion.forEach(function(component) {
+			Accordion(component, options);
+		});
+	}
+
 
 	// Best off in a seperate file to be used with other components.
 
@@ -70,8 +125,5 @@
 
 	removeNoJS();
 
-	if(dataAccordion.length > 0) {
-		dataAccordion.forEach(Accordion);		
-	}
 
 })();
