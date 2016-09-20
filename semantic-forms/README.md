@@ -17,6 +17,26 @@
 - `placeholder` - Some placeholder text for your input field
 - `disabled` - Prevents the user from selecting this input
 
+## Autocomplete Hints
+
+- `cc-type` - Card type
+- `cc-exp` - Expiry date
+- `cc-name` - Card name
+- `cc-number` - Account number
+- `cc-csc` - CVC number
+- `name` - Full name
+- `fname` - First name
+- `lname` - Last name
+- `mname` - Middle name
+- `email` - Email
+- `street-address` - Address
+- `address-line1` - Address level 1
+- `address-line1` - Address level 2
+- `postal-code` - State
+- `country` - Zip
+- `tel` - phone
+
 ## Useful Resources
 - [How to structure an HTML form](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form)
 - [Sensible Forms: A Form Usability Checklist](http://alistapart.com/article/sensibleforms)
+- [Help users checkout faster with Autofill](https://developers.google.com/web/updates/2015/06/checkout-faster-with-autofill?hl=en)

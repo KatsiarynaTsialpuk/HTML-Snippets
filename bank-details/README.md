@@ -8,7 +8,7 @@ Here is a list of what I have used below:
 
 - `cc-type` - Card type
 - `cc-exp` - Expiry Date
-- `cc-name` - Full Name
+- `cc-name` - Card Name
 - `cc-number` - Account Number
 - `cc-csc` - CVC Number
 
@@ -28,7 +28,7 @@ Here is a list of what I have used below:
 		<div class="form-group">
 			<label for="card-expiry">
 				Card Expiry
-				<input type="text" name="card-expiry" id="card-expiry" placeholder="MM-YYYY" autocomplete="cc-exp"  required />
+				<input type="text" name="card-expiry" id="card-expiry" placeholder="01-1990" autocomplete="cc-exp"  required />
 			</label>
 		</div>
 		<div class="form-group">
